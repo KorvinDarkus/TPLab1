@@ -39,4 +39,5 @@
 - **Модульное тестирование**
 
 ## Структура проекта
-<img width="1327" height="463" alt="image" src="https://github.com/user-attachments/assets/14b27425-e5ef-40d6-92b8-016bc19e4c15" />
+<img width="995" height="468" alt="image" src="https://github.com/user-attachments/assets/c0343de2-ade3-4c9c-9ffc-c02e3d8a36a1" />
+
