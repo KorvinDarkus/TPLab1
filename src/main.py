@@ -20,20 +20,17 @@ def get_path_from_arguments(args) -> str:
 def main():
     path, file_format = get_path_from_arguments(sys.argv[1:])
     
-    # Выбираем подходящий DataReader в зависимости от формата
     if file_format == "yaml":
         reader = YAMLDataReader()
-    else:  # по умолчанию текстовый формат
+    else:
         reader = TextDataReader()
         
     students = reader.read(path)
     print("Students: ", students)
     
-    # Расчет среднего рейтинга
     rating = CalcRating(students).calc()
     print("Rating: ", rating)
     
-    # Расчет количества отличников
     excellent_count = CalcExcellentStudents(students).calc()
     print(f"Excellent students count: {excellent_count}")
 
