@@ -44,7 +44,6 @@ class TestYAMLDataReader:
         
         yield temp_path, file_and_data_content[1]
         
-
         os.unlink(temp_path)
 
     def test_read(self, filepath_and_data: tuple[str, DataType]) -> None:

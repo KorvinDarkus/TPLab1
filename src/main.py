@@ -12,7 +12,7 @@ def get_path_from_arguments(args) -> str:
     parser.add_argument("-p", dest="path", type=str, required=True,
                       help="Path to datafile")
     parser.add_argument("-f", dest="format", type=str, default="txt",
-                      help="File format (txt, yaml, json, xml)")
+                      help="File format (txt, yaml)")
     args = parser.parse_args(args)
     return args.path, args.format
 
